@@ -100,7 +100,7 @@ const educationInfo = {
       schoolName: "University of Melbourne",
       logo: require("./assets/images/unimelbLogo.png"),
       subHeader: "BSc Computer Science",
-      duration: "July 2017 - July 2022",
+      duration: "July 2019 - July 2022",
       desc: "",
       descBullets: []
     }
