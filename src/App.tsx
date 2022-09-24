@@ -12,6 +12,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Socials from "./components/Socials";
 
 const theme = extendTheme({
   fonts: {
@@ -52,6 +53,9 @@ export const App = () => (
         </GridItem>
         <GridItem colStart={3} colEnd={10}>
           <Experience />
+        </GridItem>
+        <GridItem colStart={4} colEnd={10}>
+          <Socials />
         </GridItem>
       </Grid>
     </Box>
