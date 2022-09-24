@@ -3,9 +3,9 @@ import React from "react";
 
 const Education = () => {
   return (
-    <VStack spacing={10}>
-      <Heading>education</Heading>
-      <HStack spacing={14}>
+    <VStack spacing={10} alignItems="flex-start">
+      <Heading alignSelf="center">education</Heading>
+      <HStack spacing={14} pl={28}>
         <Image src="/unimelb.svg" boxSize="100px" borderRadius="full" />
         <VStack alignItems="flex-start">
           <Text>University of Melbourne</Text>

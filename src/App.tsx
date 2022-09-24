@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 const theme = extendTheme({
   fonts: {
@@ -48,6 +49,9 @@ export const App = () => (
         </GridItem>
         <GridItem colStart={3} colEnd={10}>
           <Education />
+        </GridItem>
+        <GridItem colStart={3} colEnd={10}>
+          <Experience />
         </GridItem>
       </Grid>
     </Box>
