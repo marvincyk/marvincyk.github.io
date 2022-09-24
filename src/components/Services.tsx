@@ -22,7 +22,7 @@ const Services = () => {
           height: "300px",
         }}
       />
-      <VStack gap={4} alignItems="flex-start" textAlign="left">
+      <VStack spacing={10} alignItems="flex-start" textAlign="left">
         <Heading>services</Heading>
         <List spacing={4}>
           <ListItem>

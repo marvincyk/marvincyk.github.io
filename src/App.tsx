@@ -10,6 +10,7 @@ import {
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Education from "./components/Education";
 
 const theme = extendTheme({
   fonts: {
@@ -44,6 +45,9 @@ export const App = () => (
         </GridItem>
         <GridItem colStart={3} colEnd={11}>
           <Services />
+        </GridItem>
+        <GridItem colStart={3} colEnd={10}>
+          <Education />
         </GridItem>
       </Grid>
     </Box>
