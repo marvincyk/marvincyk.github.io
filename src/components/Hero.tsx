@@ -6,7 +6,7 @@ const Hero = () => {
     <HStack justify="space-between">
       <VStack alignItems="flex-start" textAlign="left" gap={4}>
         <Heading>Hi, I'm Marvin.</Heading>
-        <Text maxW="96">
+        <Text maxW="2xl">
           An aspiring Software Engineer pursuing a BSc Computer Science degree
           at the University of Melbourne.
         </Text>

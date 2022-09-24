@@ -3,17 +3,13 @@ import "@fontsource/press-start-2p";
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
   Grid,
   extendTheme,
-  Image,
   GridItem,
 } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 
 const theme = extendTheme({
   fonts: {
@@ -33,12 +29,21 @@ const theme = extendTheme({
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box bgColor="black" textColor="custom.200">
-      <Grid minH="100vh" templateColumns="repeat(12, 1fr)" gap={6} p={8}>
+      <Grid
+        minH="100vh"
+        templateColumns="repeat(12, 1fr)"
+        columnGap={6}
+        rowGap={40}
+        p={8}
+      >
         <GridItem colSpan={12}>
           <Navbar />
         </GridItem>
-        <GridItem colStart={2} colEnd={10}>
+        <GridItem colStart={2} colEnd={12}>
           <Hero />
+        </GridItem>
+        <GridItem colStart={3} colEnd={11}>
+          <Services />
         </GridItem>
       </Grid>
     </Box>
