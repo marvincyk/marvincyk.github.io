@@ -10,7 +10,7 @@ const Hero = () => {
           An aspiring Software Engineer pursuing a BSc Computer Science degree
           at the University of Melbourne.
         </Text>
-        <Button colorScheme="green" size="lg" textColor="black">
+        <Button bg="custom.100" size="lg" textColor="black">
           CONTACT ME
         </Button>
       </VStack>

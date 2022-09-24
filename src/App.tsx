@@ -1,4 +1,5 @@
 import * as React from "react";
+import "@fontsource/press-start-2p";
 import {
   ChakraProvider,
   Box,
@@ -7,16 +8,31 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
+  extendTheme,
   Image,
   GridItem,
 } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
+const theme = extendTheme({
+  fonts: {
+    heading: `"Press Start 2P", cursive`,
+    body: `"Press Start 2P", cursive`,
+  },
+  colors: {
+    custom: {
+      100: "#D8E9A8",
+      200: "#4E9F3D",
+      300: "#1E5128",
+      400: "#191A19",
+    },
+  },
+});
+
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box fontSize="xl" bgColor="black" textColor="#4E9F3D">
+    <Box bgColor="black" textColor="custom.200">
       <Grid minH="100vh" templateColumns="repeat(12, 1fr)" gap={6} p={8}>
         <GridItem colSpan={12}>
           <Navbar />
