@@ -48,10 +48,10 @@ export const App = () => (
         <GridItem colStart={3} colEnd={11}>
           <Services />
         </GridItem>
-        <GridItem colStart={3} colEnd={10}>
+        <GridItem colStart={4} colEnd={10}>
           <Education />
         </GridItem>
-        <GridItem colStart={3} colEnd={10}>
+        <GridItem colStart={4} colEnd={10}>
           <Experience />
         </GridItem>
         <GridItem colStart={4} colEnd={10}>
