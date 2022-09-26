@@ -5,6 +5,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import { ImMail } from "react-icons/im";
 import React from "react";
 
 const Socials = () => {
@@ -24,6 +25,16 @@ const Socials = () => {
         <Link href="https://www.linkedin.com/in/marvincyk/" target="_blank">
           <Icon
             as={FaLinkedin}
+            boxSize="40px"
+            color="custom.200"
+            _hover={{
+              color: "white",
+            }}
+          />
+        </Link>
+        <Link href="mailto:marvin@marvincyk.com" target="_blank">
+          <Icon
+            as={ImMail}
             boxSize="40px"
             color="custom.200"
             _hover={{
