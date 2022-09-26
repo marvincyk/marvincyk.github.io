@@ -1,4 +1,5 @@
 import { Heading, HStack, Text, VStack, Image, Button } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import React from "react";
 
 const Hero = () => {
@@ -10,9 +11,11 @@ const Hero = () => {
           An aspiring Software Engineer pursuing a BSc Computer Science degree
           at the University of Melbourne.
         </Text>
-        <Button bg="custom.100" size="lg" textColor="black">
-          CONTACT ME
-        </Button>
+        <Link to="socials" smooth>
+          <Button bg="custom.100" size="lg" textColor="black">
+            CONTACT ME
+          </Button>
+        </Link>
       </VStack>
       <Image src="/portrait.jpg" boxSize="300px" borderRadius="full" />
     </HStack>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <VStack spacing={10} alignItems="flex-start">
+    <VStack spacing={10} alignItems="flex-start" pt={4}>
       <Heading alignSelf="center">experience</Heading>
       <Flex flexDir="column" pl={28} gap={10}>
         <HStack spacing={14}>

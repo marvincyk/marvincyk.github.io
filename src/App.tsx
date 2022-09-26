@@ -45,16 +45,16 @@ export const App = () => (
         <GridItem colStart={2} colEnd={12}>
           <Hero />
         </GridItem>
-        <GridItem colStart={3} colEnd={11}>
+        <GridItem colStart={3} colEnd={11} id="services">
           <Services />
         </GridItem>
-        <GridItem colStart={4} colEnd={10}>
+        <GridItem colStart={4} colEnd={10} id="education">
           <Education />
         </GridItem>
-        <GridItem colStart={4} colEnd={10}>
+        <GridItem colStart={4} colEnd={10} id="experience">
           <Experience />
         </GridItem>
-        <GridItem colStart={4} colEnd={10}>
+        <GridItem colStart={4} colEnd={10} id="socials">
           <Socials />
         </GridItem>
       </Grid>

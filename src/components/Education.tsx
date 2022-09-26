@@ -3,7 +3,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <VStack spacing={10} alignItems="flex-start">
+    <VStack spacing={10} alignItems="flex-start" pt={4}>
       <Heading alignSelf="center">education</Heading>
       <HStack spacing={14} pl={28}>
         <Image src="/unimelb.svg" boxSize="100px" borderRadius="full" />
