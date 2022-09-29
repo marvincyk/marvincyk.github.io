@@ -20,6 +20,7 @@ const Socials = () => {
             _hover={{
               color: "white",
             }}
+            transition="color 200ms"
           />
         </Link>
         <Link href="https://www.linkedin.com/in/marvincyk/" target="_blank">
@@ -30,6 +31,7 @@ const Socials = () => {
             _hover={{
               color: "white",
             }}
+            transition="color 200ms"
           />
         </Link>
         <Link href="mailto:marvin@marvincyk.com" target="_blank">
@@ -50,6 +52,7 @@ const Socials = () => {
             _hover={{
               color: "white",
             }}
+            transition="color 200ms"
           />
         </Link>
         <Link href="https://www.instagram.com/marvincyk/" target="_blank">
@@ -60,6 +63,7 @@ const Socials = () => {
             _hover={{
               color: "white",
             }}
+            transition="color 200ms"
           />
         </Link>
       </HStack>

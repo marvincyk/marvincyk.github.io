@@ -14,6 +14,7 @@ const Navbar = () => {
                 cursor: "pointer",
                 color: "white",
               }}
+              transition="color 200ms"
             >
               services
             </ListItem>
@@ -24,6 +25,7 @@ const Navbar = () => {
                 cursor: "pointer",
                 color: "white",
               }}
+              transition="color 200ms"
             >
               education
             </ListItem>
@@ -34,6 +36,7 @@ const Navbar = () => {
                 cursor: "pointer",
                 color: "white",
               }}
+              transition="color 200ms"
             >
               experience
             </ListItem>
