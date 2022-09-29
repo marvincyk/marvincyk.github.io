@@ -13,6 +13,7 @@ import Services from "./components/Services";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Socials from "./components/Socials";
+import ScrollToTop from "react-scroll-to-top";
 
 const theme = extendTheme({
   fonts: {
@@ -59,5 +60,14 @@ export const App = () => (
         </GridItem>
       </Grid>
     </Box>
+    <ScrollToTop
+      smooth
+      style={{
+        justifyContent: "center",
+        alignItems: "center",
+        display: "flex",
+        backgroundColor: "#4E9F3D",
+      }}
+    />
   </ChakraProvider>
 );
