@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { CheckCircleIcon } from "@chakra-ui/icons";
+import Typewriter from "typewriter-effect";
 
 const Services = () => {
   return (
@@ -23,7 +24,13 @@ const Services = () => {
         }}
       />
       <VStack spacing={10} alignItems="flex-start" textAlign="left">
-        <Heading>services</Heading>
+        <Heading>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.pauseFor(2500).typeString("services").start();
+            }}
+          />
+        </Heading>
         <List spacing={4}>
           <ListItem>
             <ListIcon as={CheckCircleIcon} color="custom.100" mr={4} />

@@ -1,10 +1,17 @@
 import { Heading, HStack, VStack, Image, Text, Flex } from "@chakra-ui/react";
+import Typewriter from "typewriter-effect";
 import React from "react";
 
 const Experience = () => {
   return (
     <VStack spacing={10} alignItems="flex-start" pt={4}>
-      <Heading alignSelf="center">experience</Heading>
+      <Heading alignSelf="center">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter.pauseFor(7500).typeString("experience").start();
+          }}
+        />
+      </Heading>
       <Flex flexDir="column" pl={28} gap={10}>
         <HStack spacing={14}>
           <Image src="/50raw.svg" boxSize="100px" borderRadius="full" />

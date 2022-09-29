@@ -5,8 +5,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <Box as="nav">
-      <HStack justify="space-between">
-        <Image src="/logo.svg" />
+      <HStack justify="space-between" align="center">
+        <Image src="/logo.svg" w="300px" h="60px" ml={-16} />
         <List display="flex" gap={20}>
           <Link to="services" smooth>
             <ListItem
