@@ -14,6 +14,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Socials from "./components/Socials";
 import ScrollToTop from "react-scroll-to-top";
+import { Fade } from "react-awesome-reveal";
 
 const theme = extendTheme({
   fonts: {
@@ -37,26 +38,36 @@ export const App = () => (
         minH="100vh"
         templateColumns="repeat(12, 1fr)"
         columnGap={6}
-        rowGap={40}
+        rowGap={80}
         p={8}
       >
         <GridItem colSpan={12}>
           <Navbar />
         </GridItem>
         <GridItem colStart={2} colEnd={12}>
-          <Hero />
+          <Fade fraction={0.5}>
+            <Hero />
+          </Fade>
         </GridItem>
         <GridItem colStart={3} colEnd={11} id="services">
-          <Services />
+          <Fade fraction={0.5}>
+            <Services />
+          </Fade>
         </GridItem>
         <GridItem colStart={4} colEnd={10} id="education">
-          <Education />
+          <Fade fraction={0.5}>
+            <Education />
+          </Fade>
         </GridItem>
         <GridItem colStart={4} colEnd={10} id="experience">
-          <Experience />
+          <Fade fraction={0.5}>
+            <Experience />
+          </Fade>
         </GridItem>
         <GridItem colStart={4} colEnd={10} id="socials">
-          <Socials />
+          <Fade fraction={0.5}>
+            <Socials />
+          </Fade>
         </GridItem>
       </Grid>
     </Box>
