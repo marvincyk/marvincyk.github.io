@@ -1,50 +1,99 @@
-import { Heading, HStack, VStack, Image, Text, Flex } from "@chakra-ui/react";
+import { Heading, Stack, VStack, Image, Text, Flex } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import React from "react";
 
 const Experience = () => {
   return (
-    <VStack spacing={10} alignItems="flex-start" pt={4}>
-      <Heading alignSelf="center">
+    <VStack spacing={10} alignItems="center" pt={4}>
+      <Heading
+        alignSelf="center"
+        fontSize={{ base: "2xl", lg: "4xl" }}
+        pl={{ base: 8, md: 0 }}
+      >
         <Typewriter
           onInit={(typewriter) => {
             typewriter.pauseFor(7500).typeString("experience").start();
           }}
         />
       </Heading>
-      <Flex flexDir="column" pl={28} gap={10}>
-        <HStack spacing={14}>
-          <Image src="/50raw.svg" boxSize="100px" borderRadius="full" />
-          <VStack alignItems="flex-start">
+      <Flex
+        flexDir="column"
+        whiteSpace={"nowrap"}
+        gap={20}
+        align="center"
+        fontSize={{ base: "xs", lg: "md" }}
+      >
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          spacing={14}
+        >
+          <Image
+            src="/50raw.svg"
+            boxSize="100px"
+            borderRadius="full"
+            alignSelf={{ base: "center", md: "flex-start" }}
+          />
+          <VStack alignItems={{ base: "center", md: "flex-start" }}>
             <Text>50 Raw</Text>
             <Text>Full Stack Developer</Text>
             <Text>Jun 2022 - Present</Text>
           </VStack>
-        </HStack>
-        <HStack spacing={14}>
-          <Image src="/50raw.svg" boxSize="100px" borderRadius="full" />
-          <VStack alignItems="flex-start">
+        </Stack>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          spacing={14}
+        >
+          <Image
+            src="/50raw.svg"
+            boxSize="100px"
+            borderRadius="full"
+            alignSelf={{ base: "center", md: "flex-start" }}
+          />
+          <VStack alignItems={{ base: "center", md: "flex-start" }}>
             <Text>50 Raw</Text>
-            <Text>Full Stack Developer Intern</Text>
+            <Text>Full Stack Developer</Text>
+            <Text>(Internship)</Text>
             <Text>Feb 2022 - May 2022</Text>
           </VStack>
-        </HStack>
-        <HStack spacing={14}>
-          <Image src="/metroport.svg" boxSize="100px" borderRadius="full" />
-          <VStack alignItems="flex-start">
+        </Stack>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          spacing={14}
+          pl={{ base: 0, md: 7 }}
+        >
+          <Image
+            src="/metroport.svg"
+            boxSize="100px"
+            borderRadius="full"
+            alignSelf={{ base: "center", md: "flex-start" }}
+          />
+          <VStack alignItems={{ base: "center", md: "flex-start" }}>
             <Text>Metroport Group Berhad</Text>
             <Text>IT Manager</Text>
             <Text>Jan 2020 - Mar 2020</Text>
           </VStack>
-        </HStack>
-        <HStack spacing={14}>
-          <Image src="/metroport.svg" boxSize="100px" borderRadius="full" />
-          <VStack alignItems="flex-start">
+        </Stack>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          spacing={14}
+          pl={{ base: 0, md: 7 }}
+        >
+          <Image
+            src="/metroport.svg"
+            boxSize="100px"
+            borderRadius="full"
+            alignSelf={{ base: "center", md: "flex-start" }}
+          />
+          <VStack alignItems={{ base: "center", md: "flex-start" }}>
             <Text>Metroport Group Berhad</Text>
             <Text>IT Manager</Text>
             <Text>Nov 2018 - Jul 2019</Text>
           </VStack>
-        </HStack>
+        </Stack>
       </Flex>
     </VStack>
   );

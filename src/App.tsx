@@ -38,34 +38,34 @@ export const App = () => (
         minH="100vh"
         templateColumns="repeat(12, 1fr)"
         columnGap={6}
-        rowGap={80}
+        rowGap={{ base: "60", lg: "80" }}
         p={8}
       >
         <GridItem colSpan={12}>
           <Navbar />
         </GridItem>
-        <GridItem colStart={2} colEnd={12}>
-          <Fade fraction={0.5}>
+        <GridItem colSpan={12}>
+          <Fade fraction={0.25}>
             <Hero />
           </Fade>
         </GridItem>
-        <GridItem colStart={3} colEnd={11} id="services">
-          <Fade fraction={0.5}>
+        <GridItem colSpan={12} id="services">
+          <Fade fraction={0.25}>
             <Services />
           </Fade>
         </GridItem>
-        <GridItem colStart={4} colEnd={10} id="education">
-          <Fade fraction={0.5}>
+        <GridItem colSpan={12} id="education">
+          <Fade fraction={0.25}>
             <Education />
           </Fade>
         </GridItem>
-        <GridItem colStart={4} colEnd={10} id="experience">
-          <Fade fraction={0.5}>
+        <GridItem colSpan={12} id="experience">
+          <Fade fraction={0.25}>
             <Experience />
           </Fade>
         </GridItem>
-        <GridItem colStart={4} colEnd={10} id="socials">
-          <Fade fraction={0.5}>
+        <GridItem colSpan={12} id="socials">
+          <Fade fraction={0.25}>
             <Socials />
           </Fade>
         </GridItem>

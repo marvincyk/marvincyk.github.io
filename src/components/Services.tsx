@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import coding from "../lotties/coding.json";
 import {
   Heading,
-  HStack,
+  Stack,
   List,
   ListIcon,
   ListItem,
@@ -14,7 +14,12 @@ import Typewriter from "typewriter-effect";
 
 const Services = () => {
   return (
-    <HStack justify="space-between">
+    <Stack
+      justify="center"
+      align={"center"}
+      direction={{ base: "column-reverse", md: "row" }}
+      gap={20}
+    >
       <Lottie
         animationData={coding}
         loop={true}
@@ -23,15 +28,20 @@ const Services = () => {
           height: "300px",
         }}
       />
-      <VStack spacing={10} alignItems="flex-start" textAlign="left">
-        <Heading>
+      <VStack
+        spacing={10}
+        alignItems="flex-start"
+        textAlign="left"
+        pl={{ base: 8, md: 0 }}
+      >
+        <Heading fontSize={{ base: "2xl", lg: "4xl" }}>
           <Typewriter
             onInit={(typewriter) => {
               typewriter.pauseFor(2500).typeString("services").start();
             }}
           />
         </Heading>
-        <List spacing={4}>
+        <List spacing={4} fontSize={{ base: "xs", lg: "md" }}>
           <ListItem>
             <ListIcon as={CheckCircleIcon} color="custom.100" mr={4} />
             Web development
@@ -42,7 +52,7 @@ const Services = () => {
           </ListItem>
         </List>
       </VStack>
-    </HStack>
+    </Stack>
   );
 };
 
