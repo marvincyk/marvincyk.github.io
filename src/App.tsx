@@ -45,27 +45,27 @@ export const App = () => (
           <Navbar />
         </GridItem>
         <GridItem colSpan={12}>
-          <Fade fraction={0.25}>
+          <Fade>
             <Hero />
           </Fade>
         </GridItem>
         <GridItem colSpan={12} id="services">
-          <Fade fraction={0.25}>
+          <Fade>
             <Services />
           </Fade>
         </GridItem>
         <GridItem colSpan={12} id="education">
-          <Fade fraction={0.25}>
+          <Fade>
             <Education />
           </Fade>
         </GridItem>
         <GridItem colSpan={12} id="experience">
-          <Fade fraction={0.25}>
+          <Fade>
             <Experience />
           </Fade>
         </GridItem>
         <GridItem colSpan={12} id="socials">
-          <Fade fraction={0.25}>
+          <Fade>
             <Socials />
           </Fade>
         </GridItem>
