@@ -41,10 +41,13 @@ export const App = () => (
         rowGap={{ base: "60", lg: "80" }}
         p={8}
       >
-        <GridItem colSpan={12}>
+        <GridItem
+          colSpan={12}
+          display="flex"
+          flexDirection="column"
+          gap={{ base: 20, md: 40, lg: 60 }}
+        >
           <Navbar />
-        </GridItem>
-        <GridItem colSpan={12}>
           <Fade>
             <Hero />
           </Fade>
