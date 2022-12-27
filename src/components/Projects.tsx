@@ -139,7 +139,7 @@ export default function Projects() {
 									<Heading
 										fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
 										color="white"
-										whiteSpace="nowrap"
+										whiteSpace={{ lg: "nowrap" }}
 									>
 										{card.title}
 									</Heading>
