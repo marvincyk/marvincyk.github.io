@@ -1,6 +1,5 @@
-import { Heading, Stack, VStack, Image, Text, Flex } from "@chakra-ui/react";
+import { Flex, Heading, Image, Stack, Text, VStack } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
-import React from "react";
 
 const Experience = () => {
 	return (
@@ -90,7 +89,7 @@ const Experience = () => {
 					/>
 					<VStack alignItems={{ base: "center", md: "flex-start" }}>
 						<Text>Metroport Group Berhad</Text>
-						<Text>IT Manager</Text>
+						<Text>Head of IT</Text>
 						<Text>Jan 2020 - Mar 2020</Text>
 					</VStack>
 				</Stack>
@@ -108,7 +107,7 @@ const Experience = () => {
 					/>
 					<VStack alignItems={{ base: "center", md: "flex-start" }}>
 						<Text>Metroport Group Berhad</Text>
-						<Text>IT Manager</Text>
+						<Text>Head of IT</Text>
 						<Text>Nov 2018 - Jul 2019</Text>
 					</VStack>
 				</Stack>
