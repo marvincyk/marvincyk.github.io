@@ -1,21 +1,19 @@
-import * as React from "react";
-import "@fontsource/press-start-2p";
 import {
-	ChakraProvider,
 	Box,
+	ChakraProvider,
 	Grid,
-	extendTheme,
 	GridItem,
+	extendTheme,
 } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
+import "@fontsource/press-start-2p";
+import { Fade } from "react-awesome-reveal";
+import ScrollToTop from "react-scroll-to-top";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Services from "./components/Services";
 import Socials from "./components/Socials";
-import ScrollToTop from "react-scroll-to-top";
-import { Fade } from "react-awesome-reveal";
-import Projects from "./components/Projects";
 
 const theme = extendTheme({
 	fonts: {
@@ -68,11 +66,11 @@ export const App = () => (
 						<Experience />
 					</Fade>
 				</GridItem>
-				<GridItem colSpan={12} id="projects">
+				{/* <GridItem colSpan={12} id="projects">
 					<Fade>
 						<Projects />
 					</Fade>
-				</GridItem>
+				</GridItem> */}
 				<GridItem colSpan={12} id="socials">
 					<Fade>
 						<Socials />
