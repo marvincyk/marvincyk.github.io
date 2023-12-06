@@ -12,6 +12,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Socials from "./components/Socials";
 
@@ -66,11 +67,11 @@ export const App = () => (
 						<Experience />
 					</Fade>
 				</GridItem>
-				{/* <GridItem colSpan={12} id="projects">
+				<GridItem colSpan={12} id="projects">
 					<Fade>
 						<Projects />
 					</Fade>
-				</GridItem> */}
+				</GridItem>
 				<GridItem colSpan={12} id="socials">
 					<Fade>
 						<Socials />

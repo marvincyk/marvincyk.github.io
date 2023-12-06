@@ -1,15 +1,15 @@
-import React from "react";
 import {
 	Box,
-	IconButton,
-	useBreakpointValue,
-	Stack,
-	Heading,
-	Text,
 	Container,
-	VStack,
+	Heading,
+	IconButton,
 	Link,
+	Stack,
+	Text,
+	VStack,
+	useBreakpointValue,
 } from "@chakra-ui/react";
+import React from "react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
@@ -21,12 +21,6 @@ const settings = {
 	dots: true,
 	arrows: false,
 	fade: true,
-	infinite: true,
-	autoplay: true,
-	speed: 500,
-	autoplaySpeed: 5000,
-	slidesToShow: 1,
-	slidesToScroll: 1,
 };
 
 export default function Projects() {
@@ -43,10 +37,19 @@ export default function Projects() {
 	// This can be static or loaded from a server
 	const cards = [
 		{
-			title: "Time is Money",
-			text: "A motivating web app that shows you your salary as an incrementing counter.",
-			image: "./Celestial.jpg",
-			link: "https://www.timeismoney.pro/",
+			title: "PocketDex",
+			text: "A mobile application that simulates a Pokédex from the Pokémon franchise.",
+			link: "https://github.com/marvincyk/PocketDex",
+		},
+		{
+			title: "Life of a Programmer",
+			text: "A first-person speed runner game centred around running through code to catch a bug at the end of the level.",
+			link: "https://github.com/rpuhalovich/life_of_a_programmer.exe",
+		},
+		{
+			title: "+EV Poker Coaching",
+			text: "A freelance web project I built for a poker coaching organisation.",
+			link: "https://plus-ev-poker-coaching.vercel.app/",
 		},
 	];
 
@@ -96,7 +99,7 @@ export default function Projects() {
 						background: "whiteAlpha.300",
 					}}
 				>
-					<BiLeftArrowAlt size="40px" color="white" />
+					<BiLeftArrowAlt size="40px" color="green" />
 				</IconButton>
 				{/* Right Icon */}
 				<IconButton
@@ -112,7 +115,7 @@ export default function Projects() {
 						background: "whiteAlpha.300",
 					}}
 				>
-					<BiRightArrowAlt size="40px" color="white" />
+					<BiRightArrowAlt size="40px" color="green" />
 				</IconButton>
 				{/* Slider */}
 				<Slider {...settings} ref={(slider) => setSlider(slider)}>
@@ -124,37 +127,33 @@ export default function Projects() {
 							backgroundPosition="center"
 							backgroundRepeat="no-repeat"
 							backgroundSize="cover"
-							backgroundImage={`url(${card.image})`}
+							backgroundColor="whiteAlpha.100"
 						>
-							{/* This is the block you need to change, to customize the caption */}
-							<Container size="container.lg" height="600px" position="relative">
-								<Stack
-									spacing={6}
-									w={"full"}
-									maxW={"lg"}
-									position="absolute"
-									top="50%"
-									transform="translate(0, -50%)"
+							<Link href={card.link} isExternal>
+								{/* This is the block you need to change, to customize the caption */}
+								<Container
+									size="container.lg"
+									height="600px"
+									position="relative"
 								>
-									<Heading
-										fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-										color="white"
-										whiteSpace={{ lg: "nowrap" }}
+									<Stack
+										spacing={6}
+										w={"full"}
+										maxW={"lg"}
+										position="absolute"
+										top="50%"
+										transform="translate(0, -50%)"
 									>
-										{card.title}
-									</Heading>
-									<Text fontSize={{ base: "md", lg: "lg" }} color="white">
-										{card.text}
-									</Text>
-									<Link
-										color="whiteAlpha.700"
-										href="https://www.timeismoney.pro/"
-										isExternal
-									>
-										CLICK HERE TO LAUNCH PROJECT
-									</Link>
-								</Stack>
-							</Container>
+										<Heading
+											fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+											whiteSpace={{ lg: "nowrap" }}
+										>
+											{card.title}
+										</Heading>
+										<Text fontSize={{ base: "md", lg: "lg" }}>{card.text}</Text>
+									</Stack>
+								</Container>
+							</Link>
 						</Box>
 					))}
 				</Slider>
