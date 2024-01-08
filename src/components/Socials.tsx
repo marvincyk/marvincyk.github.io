@@ -66,7 +66,9 @@ const Socials = () => {
 					/>
 				</Link>
 			</HStack>
-			<Text>{`©️ 2022 – ${new Date().getFullYear()} Marvin Chew`}</Text>
+			<Text
+				fontSize={{ base: "xs", lg: "md" }}
+			>{`©️ 2022 – ${new Date().getFullYear()} Marvin Chew`}</Text>
 		</VStack>
 	);
 };
