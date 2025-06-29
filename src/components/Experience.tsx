@@ -27,7 +27,6 @@ const Experience = () => {
           direction={{ base: "column", md: "row" }}
           align="center"
           spacing={14}
-          pl={{ base: 0, md: 32 }}
         >
           <Image
             src="/easygo.jpeg"
