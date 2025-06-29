@@ -27,6 +27,7 @@ const Experience = () => {
           direction={{ base: "column", md: "row" }}
           align="center"
           spacing={14}
+          pl={{ base: 0, md: 32 }}
         >
           <Image
             src="/easygo.jpeg"
@@ -45,6 +46,7 @@ const Experience = () => {
           direction={{ base: "column", md: "row" }}
           align="center"
           spacing={14}
+          pr={{ base: 0, md: 7 }}
         >
           <Image
             src="/blackai.jpeg"
@@ -100,6 +102,7 @@ const Experience = () => {
           direction={{ base: "column", md: "row" }}
           align="center"
           spacing={14}
+          pl={{ base: 0, md: 7 }}
         >
           <Image
             src="/metroport.svg"
@@ -118,6 +121,7 @@ const Experience = () => {
           direction={{ base: "column", md: "row" }}
           align="center"
           spacing={14}
+          pl={{ base: 0, md: 7 }}
         >
           <Image
             src="/metroport.svg"
