@@ -37,7 +37,7 @@ const Experience = () => {
           />
           <VStack alignItems={{ base: "center", md: "flex-start" }}>
             <Text>Easygo</Text>
-            <Text>Software Development Engineer</Text>
+            <Text>Software Engineer</Text>
             <Text>Feb 2024 - Present</Text>
           </VStack>
         </Stack>
